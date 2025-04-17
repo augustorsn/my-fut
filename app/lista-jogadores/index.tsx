@@ -3,6 +3,7 @@ import { RelativePathString, router } from "expo-router";
 import { useEffect, useState } from "react";
 import { Button, FlatList, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+import { getValidAccessToken } from "../services/authService";
 
 interface User {
   id: number;
@@ -21,14 +22,14 @@ export default function Login() {
 
   const loadData = async () => {
     const getSession = await AsyncStorage.getItem("sessionSavedValue");
-    if (getSession) setSessionSavedValue(getSession);
+    const accessToken = await getValidAccessToken();
 
     try {
       const response = await fetch("http://10.0.0.209:3333/profile", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${getSession}`,
+          Authorization: `Bearer ${accessToken}`,
         },
       });
 
@@ -47,16 +48,15 @@ export default function Login() {
 
 
   const goToSorteio = async () => {
-    const getSession = await AsyncStorage.getItem("sessionSavedValue");
-    console.log('session = ', getSession);
-    if (getSession) setSessionSavedValue(getSession);
+    const storedToken = await AsyncStorage.getItem("accessToken");
+    if (storedToken) setSessionSavedValue(storedToken);
   
     try {
       const response = await fetch("http://10.0.0.209:3333/sorteio", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${getSession}`,
+          Authorization: `Bearer ${storedToken}`,
         },
       });
   

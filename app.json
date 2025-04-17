@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-fut",
+    "name": "Meu Baba",
     "slug": "my-fut",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,29 +8,28 @@
     "scheme": "com.meubaba",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-  
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier":"com.meubaba"
+      "bundleIdentifier": "com.meubaba"
     },
     "android": {
       "package": "com.meubaba",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/leo.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/leo.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/leo.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -53,6 +52,7 @@
       "eas": {
         "projectId": "3a433baf-b8c9-4af2-9deb-d2f997efd137"
       }
-    }
+    },
+    "owner": "augustorsn"
   }
 }
