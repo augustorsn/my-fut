@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Meu Baba",
-    "slug": "meu-baba",
+    "slug": "meu-baba-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,21 +15,21 @@
     "android": {
       "package": "com.meubaba",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/leo.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/leo.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/leo.png",
+          "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -50,7 +50,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "484af069-2b2c-4764-8d06-b1f3167604e8"
+        "projectId": "14369985-2ad0-458d-8688-e75f90115b99"
       }
     }
   }
