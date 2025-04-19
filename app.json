@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Meu Baba",
-    "slug": "my-fut",
+    "slug": "meu-baba",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -38,7 +38,7 @@
       [
         "@react-native-google-signin/google-signin",
         {
-          "iosUrlScheme": "com.googleusercontent.apps.444112564468-gnqcb8rp9nqhr0c4qcekvj6q6j2bikeo_"
+          "iosUrlScheme": "com.googleusercontent.apps.444112564468-gnqcb8rp9nqhr0c4qcekvj6q6j2bikeo"
         }
       ]
     ],
@@ -50,9 +50,8 @@
         "origin": false
       },
       "eas": {
-        "projectId": "3a433baf-b8c9-4af2-9deb-d2f997efd137"
+        "projectId": "484af069-2b2c-4764-8d06-b1f3167604e8"
       }
-    },
-    "owner": "augustorsn"
+    }
   }
 }

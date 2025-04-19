@@ -3,7 +3,7 @@ import { RelativePathString, router } from "expo-router";
 import { useEffect, useState } from "react";
 import { Button, FlatList, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { getValidAccessToken } from "../services/authService";
+import { getValidAccessToken } from "..//../service/authService";
 
 interface User {
   id: number;
